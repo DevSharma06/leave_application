@@ -23,7 +23,7 @@ public class LeaveTest {
 			opt = sc.nextInt();
 			switch(opt)
 			{
-			case 1: viewAppliedLeaves();
+			case 1: viewAppliedLeaves(empno);
 				break;
 			case 2: applyLeave();
 				break;
@@ -40,9 +40,9 @@ public class LeaveTest {
 		
 	}
 	
-	static void viewAppliedLeaves()
+	static void viewAppliedLeaves(int empNo)
 	{
-		
+		Manager.checkLeaves(empNo);
 	}
 	
 	static void applyLeave()
