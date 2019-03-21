@@ -8,4 +8,9 @@ public class Manager {
 		return "";
 	}
 	
+	
+	public static void update()
+	{
+		
+	}
 }

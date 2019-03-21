@@ -8,8 +8,11 @@ public class LeaveTest {
 	static int empno;
 	static int opt;
 	
+	static LeaveRequest leaveRequest;
+	
 	public static void main(String[] args) {
 		sc = new Scanner(System.in);
+		leaveRequest = new LeaveRequest();
 		
 		System.out.println("Login:");
 		empno = sc.nextInt();
@@ -47,7 +50,10 @@ public class LeaveTest {
 	
 	static void applyLeave()
 	{
-		
+		System.out.println("Leave applying for:");
+		String reason = sc.next();
+		leaveRequest.setReason(reason);
+		Manager.update();
 	}
 	
 	static void cancelLeave()

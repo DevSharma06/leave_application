@@ -2,8 +2,8 @@ package learning.mastek;
 
 public class LeaveRequest {
 
-	int requestId;
-	String reason;
+	private int requestId;
+	private String reason;
 	public int getRequestId() {
 		return requestId;
 	}
