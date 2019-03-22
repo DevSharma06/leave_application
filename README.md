@@ -5,5 +5,4 @@ A console leave application with the menu
 3. Cancel Leave
 4. View Leave Summary
 
-Login id is required to login before the menu. Login id is present in database.csv file. 
-Other data is present in database.csv file.
+Login id is required to login before the menu. It is present in database.csv file and can be edited. 
